@@ -44,6 +44,17 @@ Key handling requirements to design and test:
 - Support least-privilege credentials and provider-side spending limits where the provider permits them.
 - Explain which provider receives audio, transcripts, and prompts before enabling a connection.
 
+## Literature and knowledge bases
+
+Let users build multiple named knowledge bases for separate debates, projects, clients, or topics. Users can add literature and other source material to each base, such as papers, books or excerpts they have rights to use, documents, links, notes, and prior arguments. Show what was imported, its processing status, and the source behind each suggested response.
+
+- Allow a user to choose the active knowledge base before a debate and switch bases during a session. Suggestions should draw from the selected base, with an option to combine explicitly selected bases.
+- Let users assign a priority or weight to each source, and optionally mark a source as authoritative, background, or disputed. Ranking should influence retrieval and presentation without treating a highly weighted source as automatically true.
+- Organize sources within each base by topic, stance, tags, and project. Let users edit, replace, remove, and reprocess individual items.
+- When supported by the chosen AI provider, upload or index items in that provider's API storage and associate them with the corresponding Rebuttalist knowledge base. Keep a mapping of local items to remote file or index IDs so the app can avoid duplicate uploads and delete or update the right remote items.
+- Explain where source content is stored, which provider can access it, any provider storage or retrieval charges, and how deletion works. Keep bases separate to avoid accidentally pulling material from another debate or client.
+- Show citations to the specific source and passage used in a rebuttal when the provider supports it. Make it clear when a suggestion is general model output rather than grounded in the selected base.
+
 ## Subscription idea
 
 Charge **$5 per month** for Rebuttalist. This is an initial pricing idea to validate, not a finalized plan. Define what the subscription includes, how billing and cancellation work, and how to handle the separate charges on users' own API accounts.
@@ -58,6 +69,7 @@ Charge **$5 per month** for Rebuttalist. This is an initial pricing idea to vali
 - What should be recorded or stored, and how will participants be informed where consent is required?
 - Which features must work on both Windows and macOS at launch?
 - How will source citations and uncertainty be shown for factual claims?
+- Which provider APIs support persistent file storage and retrieval, and should knowledge bases also work with local indexing?
 - What costs would Rebuttalist itself incur under a bring-your-own-key subscription?
 
 ## Development notes
