@@ -24,6 +24,20 @@ Support separate, independently movable and resizable windows that users can pla
 
 Allow users to show or hide each window and choose its screen. Keep the transcript, summary, and suggestions synchronized to the same conversation.
 
+## Response display settings
+
+Let users configure how live suggestions appear, with settings saved per mode or knowledge base:
+
+- Choose a format such as a fixed number of concise bullets, a short paragraph, a fuller explanation, or questions to ask.
+- Set the number of bullets (for example, exactly five), maximum length per bullet or response, and preferred level of detail.
+- Provide an **Answer** button and a keyboard shortcut. When pressed during a debate, use the latest relevant conversation context and the selected knowledge base to generate a fresh response in the saved format. For example, a five-bullet preset should display five quick bullets every time.
+- Keep the first result fast and readable at a glance. Offer a way to expand it for evidence, citations, and detail without changing the configured short view.
+- Make the current format and knowledge base visible so the user knows what the Answer button will produce.
+
+## Steelman and question mode
+
+Add a **Steelman** option that briefly presents the strongest fair version of the other person's position. From that understanding, suggest useful clarifying or probing questions the user can ask when they need a moment to think or want to test the argument. Let the user request questions directly with a button or shortcut, with the same format and maximum-length controls. Distinguish questions from factual rebuttals, and avoid inventing what the other person believes.
+
 ## Possible first version
 
 1. Capture microphone and, where permitted, the other participant's audio.
